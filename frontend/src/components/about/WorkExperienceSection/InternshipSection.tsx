@@ -54,9 +54,9 @@ export default function InternshipSection() {
         インターンシップ
       </h2>
       <div className="space-y-4">
-        {internships.map((intern, idx) => (
+        {internships.map((intern) => (
           <div
-            key={idx}
+            key={`${intern.date}-${intern.company}`}
             className="bg-white border border-white rounded-2xl p-6 transition-all"
           >
             <div className="flex items-start gap-4">

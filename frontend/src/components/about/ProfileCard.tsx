@@ -12,12 +12,11 @@ export default function ProfileCard() {
               <span className="text-gray-800">広島市立大学</span>
             </div>
             <div className="flex items-start gap-3">
-              <span className="min-w-[120px]">
-                <span className="font-semibold">学部、学科、講座:</span>
-                <br />
-                <span className="text-gray-800">
-                  情報科学部 情報科学科 コミュニケーション講座
-                </span>
+              <span className="font-semibold min-w-[120px]">
+                学部、学科、講座:
+              </span>
+              <span className="text-gray-800">
+                情報科学部 情報科学科 コミュニケーション講座
               </span>
             </div>
           </div>

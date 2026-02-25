@@ -66,9 +66,9 @@ export default function EventSection() {
         イベント参加歴
       </h2>
       <div className="space-y-4">
-        {events.map((event, idx) => (
+        {events.map((event) => (
           <div
-            key={idx}
+            key={`${event.date}-${event.title}`}
             className="bg-white/80 backdrop-blur-sm border border-white/30 rounded-2xl p-6 hover:bg-white transition-all"
           >
             <div className="flex items-start gap-4">
