@@ -16,3 +16,6 @@ frontend/dist
 
 # Workers
 workers/.wrangler
+
+# history
+.zsh_history
