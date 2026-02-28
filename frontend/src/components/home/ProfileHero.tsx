@@ -27,7 +27,7 @@ export default function ProfileHero() {
               About Me
             </button>
           </Link>
-          <Link to="/connect">
+          <Link to="/contact">
             <button className="px-8 py-3 bg-gradient-to-r from-white/80 to-white/60 text-black rounded-full font-semibold shadow-md hover:bg-white transition-all hover:scale-105 border-2 border-white/80">
               Contact
             </button>
