@@ -7,7 +7,7 @@ export default function SocialLinks() {
   const zennIcon = new URL("../../assets/zenn-icon.svg", import.meta.url).href;
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <section className="py-20 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
           SNSでつながる
@@ -20,7 +20,7 @@ export default function SocialLinks() {
             rel="noopener noreferrer"
             className="group"
           >
-            <div className="bg-gradient-to-br from-sky-900 via-sky-700 to-sky-900 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-sky-700 hover:to-sky-900 transition-all hover:scale-105">
+            <div className="backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-sky-700 hover:to-sky-900 transition-all hover:scale-105">
               <img
                 src={githubMark}
                 alt="GitHub"
@@ -36,7 +36,7 @@ export default function SocialLinks() {
             rel="noopener noreferrer"
             className="group"
           >
-            <div className="bg-gradient-to-br from-blue-900 via-blue-700 to-blue-900 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-blue-700 hover:to-blue-900 transition-all hover:scale-105">
+            <div className="backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-blue-700 hover:to-blue-900 transition-all hover:scale-105">
               <img
                 src={xIcon}
                 alt="X"
@@ -54,7 +54,7 @@ export default function SocialLinks() {
             rel="noopener noreferrer"
             className="group"
           >
-            <div className="bg-gradient-to-br from-green-900 via-green-700 to-green-900 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-green-700 hover:to-green-900 transition-all hover:scale-105">
+            <div className="backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-green-700 hover:to-green-900 transition-all hover:scale-105">
               <img
                 src={qiitaIcon}
                 alt="Qiita"
@@ -70,7 +70,7 @@ export default function SocialLinks() {
             rel="noopener noreferrer"
             className="group"
           >
-            <div className="bg-gradient-to-br from-purple-900 via-purple-700 to-purple-900 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-purple-700 hover:to-purple-900 transition-all hover:scale-105">
+            <div className="backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-xl hover:bg-gradient-to-br hover:from-purple-700 hover:to-purple-900 transition-all hover:scale-105">
               <img
                 src={zennIcon}
                 alt="Zenn"

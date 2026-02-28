@@ -5,7 +5,7 @@ const profileIcon = new URL("../../assets/profile-icon.JPG", import.meta.url)
 
 export default function ProfileHero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center px-4 md:px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <section className="min-h-screen flex flex-col justify-center items-center px-4 md:px-8">
       <div className="text-center max-w-4xl">
         <img
           className="w-36 h-36 md:w-52 md:h-52 rounded-full object-cover mx-auto mb-8 border-4 border-white/30 shadow-xl"

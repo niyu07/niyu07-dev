@@ -45,14 +45,14 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 md:p-12 mb-16">
-      <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3">
+    <div className="bg-white/60 backdrop-blur-sm border border-white/40 rounded-3xl p-8 md:p-12 mb-16">
+      <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
         メッセージを送る
       </h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
-            className="block text-white font-semibold mb-2"
+            className="block text-gray-700 font-semibold mb-2"
             htmlFor="contact-name"
           >
             お名前
@@ -62,32 +62,32 @@ export default function ContactForm() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full bg-white/10 border border-white/30 rounded-xl p-4 text-white placeholder-white/50 focus:ring-2 focus:ring-white/50 focus:outline-none transition-all"
+            className="w-full bg-white/70 border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
             placeholder="山田 太郎"
             required
           />
         </div>
         <div>
-          <label className="block text-white font-semibold mb-2">
+          <label className="block text-gray-700 font-semibold mb-2">
             メールアドレス
           </label>
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full bg-white/10 border border-white/30 rounded-xl p-4 text-white placeholder-white/50 focus:ring-2 focus:ring-white/50 focus:outline-none transition-all"
+            className="w-full bg-white/70 border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
             placeholder="example@example.com"
             required
           />
         </div>
         <div>
-          <label className="block text-white font-semibold mb-2">
+          <label className="block text-gray-700 font-semibold mb-2">
             メッセージ
           </label>
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full bg-white/10 border border-white/30 rounded-xl p-4 text-white placeholder-white/50 focus:ring-2 focus:ring-white/50 focus:outline-none transition-all"
+            className="w-full bg-white/70 border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
             placeholder="お問い合わせ内容"
             rows={6}
             required
