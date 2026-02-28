@@ -1,5 +1,11 @@
-import { FaReact, FaGitAlt } from "react-icons/fa";
-import { SiVite, SiTailwindcss } from "react-icons/si";
+import { FaReact, FaGitAlt, FaGithub, FaDocker, FaLinux } from "react-icons/fa";
+import {
+  SiVite,
+  SiTailwindcss,
+  SiAndroidstudio,
+  SiMarkdown,
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export default function ToolList() {
   const tools = [
@@ -52,6 +58,78 @@ export default function ToolList() {
       ),
     },
     // 他ツールも追加可能
+    {
+      name: "GitHub",
+      years: 3,
+      scene: "個人開発・チーム開発・業務委託・インターンシップ",
+      icon: (
+        <FaGithub
+          className="text-gray-800 text-5xl"
+          aria-hidden="true"
+          focusable={false}
+        />
+      ),
+    },
+    {
+      name: "VSCode",
+      years: 3,
+      scene: "個人開発・授業・アルバイト",
+      icon: (
+        <VscVscode
+          className="text-blue-500 text-5xl"
+          aria-hidden="true"
+          focusable={false}
+        />
+      ),
+    },
+    {
+      name: "Android Studio",
+      years: 2,
+      scene: "業務委託・授業・個人開発",
+      icon: (
+        <SiAndroidstudio
+          className="text-green-500 text-5xl"
+          aria-hidden="true"
+          focusable={false}
+        />
+      ),
+    },
+    {
+      name: "Docker",
+      years: 1,
+      scene: "個人開発",
+      icon: (
+        <FaDocker
+          className="text-blue-400 text-5xl"
+          aria-hidden="true"
+          focusable={false}
+        />
+      ),
+    },
+    {
+      name: "Linux",
+      years: 2,
+      scene: "授業・個人開発",
+      icon: (
+        <FaLinux
+          className="text-gray-700 text-5xl"
+          aria-hidden="true"
+          focusable={false}
+        />
+      ),
+    },
+    {
+      name: "Markdown",
+      years: 3,
+      scene: "個人開発・ドキュメント作成",
+      icon: (
+        <SiMarkdown
+          className="text-gray-800 text-5xl"
+          aria-hidden="true"
+          focusable={false}
+        />
+      ),
+    },
   ];
   return (
     <section>
