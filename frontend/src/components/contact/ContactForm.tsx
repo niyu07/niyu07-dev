@@ -45,7 +45,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white/60 backdrop-blur-sm border border-white/40 rounded-3xl p-8 md:p-12 mb-16">
+    <div className="bg-white border rounded-3xl p-8 md:p-12 mb-16">
       <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
         メッセージを送る
       </h2>
@@ -62,7 +62,7 @@ export default function ContactForm() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full bg-white/70 border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
+            className="w-full bg-white border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
             placeholder="山田 太郎"
             required
           />
@@ -79,7 +79,7 @@ export default function ContactForm() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full bg-white/70 border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
+            className="w-full bg-white border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
             placeholder="example@example.com"
             required
           />
@@ -95,7 +95,7 @@ export default function ContactForm() {
             id="contact-message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full bg-white/70 border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
+            className="w-full bg-white border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"
             placeholder="お問い合わせ内容"
             rows={6}
             required
@@ -104,7 +104,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={sending}
-          className="px-8 py-3 bg-white/90 text-black rounded-full font-semibold hover:bg-white transition-all hover:scale-105 border-2 border-white/80"
+          className="px-8 py-3 bg-sky-400 hover:bg-sky-500 text-white rounded-full font-semibold transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {sending ? "送信中..." : "送信"}
         </button>

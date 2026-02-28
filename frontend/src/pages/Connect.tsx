@@ -1,6 +1,6 @@
-import ConnectHeader from "../components/connect/ConnectHeader";
-import ContactForm from "../components/connect/ContactForm";
-import SocialLinks from "../components/connect/SocialLinks";
+import ConnectHeader from "../components/contact/contactHeader";
+import ContactForm from "../components/contact/ContactForm";
+import SocialLinks from "../components/contact/SocialLinks";
 
 export default function Connect() {
   return (
