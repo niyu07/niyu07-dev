@@ -5,7 +5,7 @@ import InternshipSection from "../components/about/WorkExperienceSection/Interns
 
 export default function About() {
   return (
-    <div className="min-h-screen px-4 md:px-8 lg:px-16 py-20">
+    <div className="px-4 md:px-8 lg:px-16 py-20">
       <div className="max-w-6xl mx-auto">
         <AboutHeader />
         <ProfileCard />

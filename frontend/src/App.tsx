@@ -6,14 +6,16 @@ import Connect from "./pages/Connect";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/tech" element={<Tech />} />
-        <Route path="/connect" element={<Connect />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="bg-gradient-to-b from-cyan-200 via-sky-300 to-blue-400 min-h-screen w-full flex flex-col">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tech" element={<Tech />} />
+          <Route path="/connect" element={<Connect />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
