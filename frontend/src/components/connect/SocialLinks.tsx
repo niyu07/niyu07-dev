@@ -1,7 +1,7 @@
-const githubMark = new URL("../assets/github-mark.svg", import.meta.url).href;
-const xIcon = new URL("../assets/x-icon.svg", import.meta.url).href;
-const qiitaIcon = new URL("../assets/qiita-icon.svg", import.meta.url).href;
-const zennIcon = new URL("../assets/zenn-icon.svg", import.meta.url).href;
+const githubMark = new URL("../../assets/github-mark.svg", import.meta.url).href;
+const xIcon = new URL("../../assets/x-icon.svg", import.meta.url).href;
+const qiitaIcon = new URL("../../assets/qiita-icon.svg", import.meta.url).href;
+const zennIcon = new URL("../../assets/zenn-icon.svg", import.meta.url).href;
 
 export default function SocialLinks() {
   return (
