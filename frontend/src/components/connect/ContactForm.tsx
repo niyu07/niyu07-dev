@@ -68,10 +68,14 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-gray-700 font-semibold mb-2">
+          <label
+            className="block text-gray-700 font-semibold mb-2"
+            htmlFor="contact-email"
+          >
             メールアドレス
           </label>
           <input
+            id="contact-email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -81,10 +85,14 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label className="block text-gray-700 font-semibold mb-2">
+          <label
+            className="block text-gray-700 font-semibold mb-2"
+            htmlFor="contact-message"
+          >
             メッセージ
           </label>
           <textarea
+            id="contact-message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="w-full bg-white/70 border border-gray-300 rounded-xl p-4 text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-sky-400 focus:outline-none transition-all"

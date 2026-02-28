@@ -6,7 +6,7 @@ import Connect from "./pages/Connect";
 
 function App() {
   return (
-    <div className="bg-gradient-to-b from-cyan-200 via-sky-300 to-blue-400 min-h-screen w-full flex flex-col justify-between">
+    <div className="bg-gradient-to-b from-cyan-200 via-sky-300 to-blue-400 min-h-screen w-full flex flex-col">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
