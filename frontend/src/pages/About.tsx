@@ -1,5 +1,6 @@
 import AboutHeader from "../components/about/AboutHeader";
 import ProfileCard from "../components/about/ProfileCard";
+import WorkSection from "../components/about/WorkExperienceSection/WorkSection";
 import EventSection from "../components/about/WorkExperienceSection/EventSection";
 import InternshipSection from "../components/about/WorkExperienceSection/InternshipSection";
 
@@ -9,6 +10,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
         <AboutHeader />
         <ProfileCard />
+        <WorkSection />
         <EventSection />
         <InternshipSection />
       </div>
