@@ -62,6 +62,11 @@ const events = [
     title: "Setory Fes!",
     type: "運営",
   },
+  {
+    date: "2026.03.13",
+    title: "IPv6ハンズオン2026 -IPv6-Mostly Networkを構築しよう",
+    type: "参加"
+  },
 ];
 
 export default function EventSection() {
