@@ -57,6 +57,11 @@ const events = [
     title: "KC3Hack 2026",
     type: "メンター",
   },
+  {
+    date: "2026.03.08",
+    title: "Setory Fes!",
+    type: "運営",
+  },
 ];
 
 export default function EventSection() {
