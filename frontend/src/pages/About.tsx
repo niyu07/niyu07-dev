@@ -3,6 +3,7 @@ import ProfileCard from "../components/about/ProfileCard";
 import WorkSection from "../components/about/WorkExperienceSection/WorkSection";
 import EventSection from "../components/about/WorkExperienceSection/EventSection";
 import InternshipSection from "../components/about/WorkExperienceSection/InternshipSection";
+import CertificationSection from "../components/about/CertificationSection";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
         <AboutHeader />
         <ProfileCard />
         <WorkSection />
+        <CertificationSection />
         <EventSection />
         <InternshipSection />
       </div>

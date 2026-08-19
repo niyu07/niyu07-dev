@@ -9,8 +9,8 @@ const works = [
   {
     type: "業務委託",
     title: "教材開発",
-    period: "2025年06月〜現在",
-    desc: "スタートプログラミングの業務委託として、プログラミングスクールの教材開発に携わっています。",
+    period: "2025年06月〜2026年04月",
+    desc: "スタートプログラミングの業務委託として、プログラミングスクールの教材開発に携わりました。",
     color: "blue",
   },
   {
@@ -19,6 +19,13 @@ const works = [
     period: "2025年02月〜現在",
     desc: "Androidアプリの開発に携わっています。主にKotlinとJetpack Composeを用いてUIを開発しています。",
     color: "purple",
+  },
+  {
+    type: "業務委託",
+    title: "WordPressサイト制作",
+    period: "2026年03月〜現在",
+    desc: "WordPressを用いたWebサイト制作の業務委託に携わっています。",
+    color: "green",
   },
 ];
 
@@ -41,6 +48,11 @@ const colorMap: Record<
     border: "border-purple-500/30",
     badge: "bg-purple-500",
   },
+  green: {
+    gradient: "from-emerald-500/20 to-emerald-600/20",
+    border: "border-emerald-500/30",
+    badge: "bg-emerald-500",
+  },
 };
 
 export default function WorkSection() {
@@ -49,7 +61,7 @@ export default function WorkSection() {
       <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3">
         職歴・活動
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {works.map((work) => {
           const c = colorMap[work.color];
           return (

@@ -65,7 +65,17 @@ const events = [
   {
     date: "2026.03.13",
     title: "IPv6ハンズオン2026 -IPv6-Mostly Networkを構築しよう",
-    type: "参加"
+    type: "参加",
+  },
+  {
+    date: "2026.07.10 ~ 07.18",
+    title: "JANOG58",
+    type: "NOC",
+  },
+  {
+    date: "2026.08.02",
+    title: "[初心者歓迎!!] ネットワークゆるLT大会 #2 in 大阪",
+    type: "登壇",
   },
 ];
 
@@ -88,8 +98,10 @@ export default function EventSection() {
                     ? "bg-red-500"
                     : event.type === "運営"
                       ? "bg-purple-500"
-                      : event.type === "メンター"
-                        ? "bg-blue-500"
+                    : event.type === "メンター"
+                      ? "bg-blue-500"
+                      : event.type === "NOC"
+                        ? "bg-cyan-500"
                         : "bg-green-500"
                 }`}
               >
