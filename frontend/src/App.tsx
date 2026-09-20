@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Tech from "./pages/Tech";
 import Connect from "./pages/Connect";
+import Privacy from "./pages/Privacy";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,7 @@ function App() {
     { to: "/about", label: "私について" },
     { to: "/tech", label: "技術" },
     { to: "/contact", label: "お問い合わせ" },
+    { to: "/privacy", label: "プライバシー" },
   ];
 
   return (
@@ -85,6 +87,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/tech" element={<Tech />} />
           <Route path="/contact" element={<Connect />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </BrowserRouter>
     </div>
