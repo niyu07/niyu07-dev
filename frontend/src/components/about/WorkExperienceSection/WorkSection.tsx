@@ -27,6 +27,13 @@ const works = [
     desc: "WordPressを用いたWebサイト制作の業務委託に携わっています。",
     color: "green",
   },
+  {
+    type: "業務委託",
+    title: "AIマナバイト",
+    period: "2026年09月〜現在",
+    desc: "AIマナバイトの業務委託として働いています。",
+    color: "blue",
+  },
 ];
 
 const colorMap: Record<

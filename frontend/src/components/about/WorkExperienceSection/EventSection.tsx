@@ -77,6 +77,11 @@ const events = [
     title: "[初心者歓迎!!] ネットワークゆるLT大会 #2 in 大阪",
     type: "登壇",
   },
+  {
+    date: "2026.08.22",
+    title: "JANOG58 NOC Technical Meeting",
+    type: "登壇",
+  },
 ];
 
 export default function EventSection() {
