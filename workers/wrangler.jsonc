@@ -1,0 +1,33 @@
+{
+  "$schema": "../frontend/node_modules/wrangler/config-schema.json",
+  "name": "niyu07-contact-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-28",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "https://niyu07.com/api/contact*",
+      "zone_name": "niyu07.com",
+    },
+  ],
+  "preview_urls": false,
+  "observability": {
+    "enabled": false,
+  },
+  "vars": {
+    "ALLOWED_ORIGIN": "https://niyu07.com",
+    "EMAILJS_SERVICE_ID": "service_niyu_webpage",
+    "EMAILJS_TEMPLATE_ID": "template_z3tk7vv",
+    "EMAILJS_PUBLIC_KEY": "efUoQdIz7JyChwuFI",
+  },
+  "ratelimits": [
+    {
+      "name": "CONTACT_RATE_LIMITER",
+      "namespace_id": "1476930284",
+      "simple": {
+        "limit": 5,
+        "period": 60,
+      },
+    },
+  ],
+}

@@ -1,0 +1,10 @@
+# Use the exact local Vite origin while developing.
+ALLOWED_ORIGIN=http://localhost:5173
+
+# Add local or Cloudflare-provided test values here. Never use production secrets
+# in local development or commit workers/.dev.vars.
+TURNSTILE_SECRET_KEY=replace-with-local-turnstile-test-secret
+EMAILJS_SERVICE_ID=replace-with-emailjs-service-id
+EMAILJS_TEMPLATE_ID=replace-with-emailjs-template-id
+EMAILJS_PUBLIC_KEY=replace-with-emailjs-public-key
+EMAILJS_PRIVATE_KEY=replace-with-emailjs-private-key

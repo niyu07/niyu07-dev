@@ -5,4 +5,4 @@ Personal developer site.
 ## Structure
 
 - frontend: React (Vite)
-- workers: Cloudflare Workers (API)
+- workers: Cloudflare Workers contact API (setup: `workers/README.md`)

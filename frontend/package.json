@@ -7,7 +7,6 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.2.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -46,6 +45,7 @@
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1",
-    "vitest": "^4.0.18"
+    "vitest": "^4.0.18",
+    "wrangler": "^4.128.0"
   }
 }

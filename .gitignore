@@ -15,7 +15,15 @@ yarn-error.log*
 frontend/dist
 
 # Workers
+/.wrangler/
 workers/.wrangler
+workers/.dev.vars*
+!workers/.dev.vars.example
+
+# Frontend environment files may contain build configuration.
+frontend/.env*
+!frontend/.env.example
+!frontend/.env.production
 
 # history
 .zsh_history

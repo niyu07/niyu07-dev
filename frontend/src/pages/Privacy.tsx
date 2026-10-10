@@ -12,6 +12,7 @@ const sections = [
           <li>お名前</li>
           <li>メールアドレス</li>
           <li>お問い合わせ本文</li>
+          <li>不正送信対策に必要なIPアドレスおよび認証情報</li>
         </ul>
         <p>
           また、サイトの安定運用に必要な範囲で、アクセス日時や利用環境などの情報が
@@ -33,9 +34,26 @@ const sections = [
     title: "3. 外部サービスの利用",
     children: (
       <p>
-        お問い合わせの送信には、EmailJS などの外部サービスを利用しています。送信された情報は、
-        お問い合わせへの対応に必要な範囲で、これらのサービスを経由して取り扱われます。
-        各サービスにおける情報の取り扱いについては、各サービスのプライバシーポリシーをご確認ください。
+        お問い合わせフォームの受付と不正送信対策にCloudflare WorkersとCloudflare
+        Turnstileを、メール送信にEmailJSを利用します。入力内容はEmailJSを経由して当サイト管理者のメールアドレスへ送信されます。IPアドレスと認証情報は認証および不正送信対策のためCloudflareへ送信されます。各サービスにおける情報の取り扱いについては、
+        <a
+          href="https://www.cloudflare.com/privacypolicy/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sky-700 underline underline-offset-4 hover:text-sky-900"
+        >
+          Cloudflare のプライバシーポリシー
+        </a>
+        と
+        <a
+          href="https://www.emailjs.com/legal/privacy-policy/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sky-700 underline underline-offset-4 hover:text-sky-900"
+        >
+          EmailJS のプライバシーポリシー
+        </a>
+        をご確認ください。
       </p>
     ),
   },
@@ -43,7 +61,7 @@ const sections = [
     title: "4. 第三者提供",
     children: (
       <p>
-        取得した情報は、本人の同意がある場合、または法令に基づく場合を除き、第三者に提供しません。
+        お問い合わせの受付、ボット対策、メール配信に必要な範囲でCloudflareおよびEmailJSが情報を取り扱います。法令に基づく場合などを除き、それ以外の第三者には提供しません。
       </p>
     ),
   },
@@ -61,7 +79,10 @@ const sections = [
     children: (
       <p>
         ご本人から、当サイトが保有するお問い合わせ情報の開示、訂正、削除などをご希望の場合は、
-        <Link to="/contact" className="text-sky-700 underline underline-offset-4 hover:text-sky-900">
+        <Link
+          to="/contact"
+          className="text-sky-700 underline underline-offset-4 hover:text-sky-900"
+        >
           お問い合わせフォーム
         </Link>
         からご連絡ください。ご本人であることを確認のうえ、合理的な範囲で対応します。
@@ -105,7 +126,7 @@ export default function Privacy() {
           <h1 className="text-4xl font-bold text-white md:text-5xl">
             プライバシーポリシー
           </h1>
-          <p className="mt-5 text-white/80">最終更新日：2026年9月20日</p>
+          <p className="mt-5 text-white/80">最終更新日：2026年9月28日</p>
         </header>
 
         <article className="rounded-3xl border border-white/60 bg-white/90 p-6 text-left text-gray-700 shadow-xl backdrop-blur md:p-12">
@@ -125,7 +146,7 @@ export default function Privacy() {
           </div>
 
           <div className="mt-10 border-t border-gray-200 pt-6 text-sm text-gray-500">
-            <p>制定日：2026年9月20日</p>
+            <p>制定日：2026年9月20日／改定日：2026年9月28日</p>
           </div>
         </article>
       </div>
